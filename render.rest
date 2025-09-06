@@ -1,0 +1,15 @@
+//LOCALHOST
+### GET all contacts
+GET https://localhost:3000/contacts
+
+### GET single contact
+GET https://localhost:3000/contacts/68bb6d80ec260046216f6347
+
+
+
+//PRODUCTION
+### GET all contacts
+GET https://cse341-pszj.onrender.com/contacts
+
+### GET single contact
+GET https://cse341-pszj.onrender.com/contacts/68bb6d80ec260046216f6347
