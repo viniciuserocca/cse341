@@ -5,7 +5,7 @@
     "description": "Contacts API for Week 02 Assignment - CSE341 Web Services Course",
     "version": "1.0.0"
   },
-  "host": "cse341-pszj.onrender.com/",
+  "host": "cse341-pszj.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
