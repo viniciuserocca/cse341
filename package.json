@@ -19,7 +19,8 @@
     "mongodb": "^6.19.0",
     "nodemon": "^3.1.10",
     "swagger-autogen": "^2.23.7",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
