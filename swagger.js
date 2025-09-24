@@ -6,7 +6,7 @@ const doc = {
         description: 'Books API for Week 03 Assignment - CSE341 Web Services Course'
     },
     host: 'localhost:3000',
-    schemes:['http', 'https']
+    schemes:['https']
 };
 
 const outputFile = './swagger.json';
