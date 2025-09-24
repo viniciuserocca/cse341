@@ -1,6 +1,6 @@
 //LOCALHOST
 ### GET all contacts
-GET http://localhost:3000/contacts
+GET http://localhost:3000/books/
 
 ### GET single contact
 GET http://localhost:3000/contacts/68bb6d80ec260046216f6347
@@ -31,41 +31,3 @@ content-Type: application/json
 
 ### DELETE contact
 DELETE http://localhost:3000/contacts/68bf9afb8f6f7bc6ff53da84
-
-
-
-
-
-//PRODUCTION
-### GET all contacts
-GET https://cse341-pszj.onrender.com/contacts
-
-### GET single contact
-GET https://cse341-pszj.onrender.com/contacts/68bb6d80ec260046216f6347
-
-### POST create contact
-POST https://cse341-pszj.onrender.com/contacts HTTP/1.1
-content-Type: application/json
-
-{
-    "firstName": "Test",
-    "lastName": "Tester",
-    "email": "email@test1.com",
-    "favoriteColor": "test",
-    "birthday": "The day I was born"
-}
-
-### PUT update contact
-PUT https://cse341-pszj.onrender.com/contacts/68bf9b3ba5aa902c54a92c25
-content-Type: application/json
-
-{
-    "firstName": "Test",
-    "lastName": "Tester",
-    "email": "email@test2.com",
-    "favoriteColor": "test",
-    "birthday": "The day I was born"
-}
-
-### DELETE contact
-DELETE https://cse341-pszj.onrender.com/contacts/68bf9afb8f6f7bc6ff53da84
