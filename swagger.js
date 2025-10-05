@@ -5,8 +5,8 @@ const doc = {
         title: 'Books Review API',
         description: 'Books API for Week 03 Assignment - CSE341 Web Services Course'
     },
-    host: 'cse341-pszj.onrender.com',
-    schemes:['https']
+    host: 'localhost:3000',
+    schemes:['http']
 };
 
 const outputFile = './swagger.json';
