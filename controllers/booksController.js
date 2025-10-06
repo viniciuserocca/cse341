@@ -87,7 +87,7 @@ const createBook = async (req, res) => {
       publicationDate: req.body.publicationDate,
       isbn: req.body.isbn,
       summary: req.body.summary,
-      createdBy: null,
+      createdBy: req.session.user.displayName || req.session.user,
       createdAt: new Date(),
       updatedBy: null,
       updatedAt: null
@@ -119,6 +119,7 @@ const updateBook = async (req, res) => {
       publicationDate: req.body.publicationDate,
       isbn: req.body.isbn,
       summary: req.body.summary,
+      updatedBy: req.session.user.displayName || req.session.user,
       updatedAt: new Date()
     };
 
