@@ -62,7 +62,7 @@ const createReview = async (req, res) => {
       rating: req.body.rating,
       reviewText: req.body.reviewText,
       createdAt: new Date(),
-      createdBy: req.session.user.displayName || req.session.user
+      createdBy: req.session.user.displayName || req.session.user.username
     };
     const response = await mongodb
       .getDatabase()
@@ -93,7 +93,7 @@ const updateReview = async (req, res) => {
       rating: req.body.rating,
       reviewText: req.body.reviewText,
       updatedAt: new Date(),
-      updatedBy: req.session.user.displayName || req.session.user
+      updatedBy: req.session.user.displayName || req.session.user.username
     };
     const response = await mongodb
       .getDatabase()
