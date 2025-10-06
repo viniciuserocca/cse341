@@ -47,13 +47,11 @@ router.get('/logout',
 
 router.use('/books',
   //#swagger.tags=['Books']
-  isAuthenticated,
   require('./books.js')
 );
 
 router.use('/reviews',
   //#swagger.tags=['Reviews']
-  isAuthenticated,
   require('./reviews.js')
 );
 
